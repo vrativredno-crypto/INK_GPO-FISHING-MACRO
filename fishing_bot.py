@@ -26,7 +26,7 @@ COLOR_TOLERANCE = 25
 class ModernGPOBot:
     def __init__(self, root):
         self.root = root
-        self.root.title('GPO BOT - FORCE EQUIP EDITION')
+        self.root.title('GPO FISHING MACRO')
         self.root.attributes('-topmost', True)
         self.root.protocol('WM_DELETE_WINDOW', self.exit_app)
         
@@ -115,7 +115,7 @@ class ModernGPOBot:
         # --- Header ---
         header_frame = ttk.Frame(scrollable_frame)
         header_frame.pack(fill='x', pady=(15, 15), padx=15)
-        ttk.Label(header_frame, text='GPO ULTIMATE BOT', style='Header.TLabel').pack(side='left')
+        ttk.Label(header_frame, text='INK_GPO FISH MACRO', style='Header.TLabel').pack(side='left')
         self.status_indicator = tk.Label(header_frame, text="STOPPED", bg=self.colors['danger'], fg='white', font=('Segoe UI', 8, 'bold'), padx=8, pady=2)
         self.status_indicator.pack(side='right')
 
